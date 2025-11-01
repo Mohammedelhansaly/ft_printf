@@ -6,41 +6,28 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 22:40:26 by moel-han          #+#    #+#             */
-/*   Updated: 2025/10/29 19:03:06 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/11/01 14:41:09 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-static size_t count_digit( int n)
+int ft_print_int(int n)
 {
-    int len;
-
-    len = (n <= 0);
-    while (n)
-    {
-        n /= 10;
-        len++;
-    }
-    return len;
-}
-void put_int( int n)
-{
+    int count = 0;
     char *base;
     base = "0123456789";
-    if (n > 9)
+    if (n == -2147483648)
+        return write(1, "-2147483648", 11);
+    if (n < 0)
     {
-        put_int(n / 10);
+        count += ft_print_char('-');
+        n = -n;
     }
-    ft_print_char(base[n % 10]);
+    if (n > 9)
+        count += ft_print_int(n / 10);
+
+    count += ft_print_char(base[n % 10]);
+    return count;
 }
-
-int ft_print_int( int n)
-{
-    put_int(n);
-    return (count_digit(n));
-}
-
-
-
 

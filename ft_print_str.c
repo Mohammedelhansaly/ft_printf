@@ -6,11 +6,11 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 21:27:11 by moel-han          #+#    #+#             */
-/*   Updated: 2025/10/29 15:15:27 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:24:35 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int ft_print_str(char *str)
 {

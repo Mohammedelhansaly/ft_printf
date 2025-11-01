@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-#define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+#define FT_PRINTF_H
 
 #include <unistd.h>
 #include <stdio.h>
@@ -25,10 +25,6 @@ int ft_print_str(char *str);
 int ft_print_unsigned(unsigned int n);
 int ft_print_hex(unsigned int nb, bool upper);
 int ft_printf(const char *str, ...);
-
-
-
-
 
 
 #endif

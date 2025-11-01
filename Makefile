@@ -11,7 +11,7 @@ AR = ar rcs
 RM = rm -f
 
 %.o : %.c
-	$(CC) $(CFLAGS) -fPIC -c $< -o $@ -I $(INCS)
+	$(CC) $(CFLAGS) -c $< -o $@ -I $(INCS)
 
 all : $(NAME)
 

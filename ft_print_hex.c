@@ -6,13 +6,11 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 15:27:45 by moel-han          #+#    #+#             */
-/*   Updated: 2025/11/01 14:42:37 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/11/02 14:29:01 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-
 
 int ft_print_hex(unsigned int nb, bool upper)
 {

@@ -6,13 +6,13 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 22:38:38 by moel-han          #+#    #+#             */
-/*   Updated: 2025/10/31 17:24:46 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/11/02 13:28:45 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_print_char(char c)
+int	ft_print_char(char c)
 {
 	write(1, &c, 1);
 	return (1);

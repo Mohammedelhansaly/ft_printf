@@ -26,5 +26,4 @@ int ft_print_unsigned(unsigned int n);
 int ft_print_hex(unsigned int nb, bool upper);
 int ft_printf(const char *str, ...);
 
-
 #endif
